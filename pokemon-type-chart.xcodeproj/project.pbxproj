@@ -15,7 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AEE940F41CBAF9F40085A4C0 /* pokemon-type-chart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "pokemon-type-chart.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEE940F41CBAF9F40085A4C0 /* PokeTypeChart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokeTypeChart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEE940F71CBAF9F40085A4C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AEE940F91CBAF9F40085A4C0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AEE940FC1CBAF9F40085A4C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -46,7 +46,7 @@
 		AEE940F51CBAF9F40085A4C0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AEE940F41CBAF9F40085A4C0 /* pokemon-type-chart.app */,
+				AEE940F41CBAF9F40085A4C0 /* PokeTypeChart.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,7 +81,7 @@
 			);
 			name = "pokemon-type-chart";
 			productName = "pokemon-type-chart";
-			productReference = AEE940F41CBAF9F40085A4C0 /* pokemon-type-chart.app */;
+			productReference = AEE940F41CBAF9F40085A4C0 /* PokeTypeChart.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -96,6 +96,7 @@
 				TargetAttributes = {
 					AEE940F31CBAF9F40085A4C0 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = D678BY3E6B;
 					};
 				};
 			};
@@ -251,10 +252,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "pokemon-type-chart/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.keller.pokemon-type-chart";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = PokeTypeChart;
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -262,10 +267,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "pokemon-type-chart/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.keller.pokemon-type-chart";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = PokeTypeChart;
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -288,6 +297,7 @@
 				AEE941081CBAF9F40085A4C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
